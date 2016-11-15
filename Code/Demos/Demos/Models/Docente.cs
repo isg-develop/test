@@ -77,5 +77,22 @@ namespace Demos.Models
         {
             return getSueldoBruto() - getDescuento();
         }
+        
+        public void Mensaje(String undato){
+	        string frase;
+	 
+	        frase = "Hola, como estas?";
+	        Console.WriteLine("La frase es \"{0}\"", frase);
+	 
+	        Console.WriteLine("Introduce una nueva frase");
+	        frase = Console.ReadLine();
+	        Console.WriteLine("Ahora la frase es \"{0}\"", frase);
+	 
+	        if (frase == "Hola!"){
+	            Console.WriteLine("Hola a ti también! ");
+	        } else {
+	        	Console.WriteLine("Hola a ti " + undato);
+	        }
+        }
 	}
 }
