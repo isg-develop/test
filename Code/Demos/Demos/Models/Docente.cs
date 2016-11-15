@@ -25,6 +25,7 @@ namespace Demos.Models
             this.tipo = tipo;
             this.horas = horas;
         }
+		
 
         public String getNombre(){
             return nombre;
