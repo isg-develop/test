@@ -14,6 +14,7 @@ namespace Demos
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
+		private System.Windows.Forms.Label label1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -36,12 +37,28 @@ namespace Demos
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.label1 = new System.Windows.Forms.Label();
+			this.SuspendLayout();
+			// 
+			// label1
+			// 
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(120, 57);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(251, 52);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Bienvenidos";
 			// 
 			// MainForm
 			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Text = "Demos";
+			this.ClientSize = new System.Drawing.Size(492, 182);
+			this.Controls.Add(this.label1);
 			this.Name = "MainForm";
+			this.Text = "Demos";
+			this.ResumeLayout(false);
+
 		}
 	}
 }
